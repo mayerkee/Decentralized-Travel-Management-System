@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - DTMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DTMS</div>
+            <div class="auth-links">
+                <button class="signin-btn">Sign in with Wallet</button>
+                <div class="language-picker">
+                    <span>EN</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-results">
+            <div class="filter-section">
+                <h2>Filter by:</h2>
+                <div class="filter">
+                    <button class="filter-btn" onclick="filterPreferredHotels()">Preferred Hotels</button>
+                </div>
+                <div class="filter">
+                    <h3>Services</h3>
+                    <label><input type="checkbox" onchange="applyFilters()"> Room type</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Breakfast Included</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Tax Included</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Cancellation</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Wifi</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Car Parking</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Fitness Center</label>
+                    <label><input type="checkbox" onchange="applyFilters()"> Electric Car Charging</label>
+                </div>
+            </div>
+            <div class="results-section">
+                <h2 id="result-title">Berlin: <span id="result-count">0</span> properties found</h2>
+                <div class="hotel-list" id="hotel-list">
+                    <!-- Hotel items will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

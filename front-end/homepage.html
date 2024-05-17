@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Travel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DTMS</div>
+            <div class="auth-links">
+                <button class="signin-btn">Sign in with Wallet</button>
+                <div class="language-picker">
+                    <span>EN</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pack the whole toybox</h1>
+                <p>Unwind and spread out in a holiday home</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Where are you going?" class="location-input" id="location">
+                    <input type="text" placeholder="Check-in date - Check-out date" class="date-input" id="date-range">
+                    <input type="text" placeholder="2 adults · 0 children · 1 room" class="traveler-input" id="travelers">
+                    <button class="search-btn" onclick="searchHotels()">Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

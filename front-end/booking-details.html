@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details - DTMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DTMS</div>
+            <div class="auth-links">
+                <button class="signin-btn">Sign in with Wallet</button>
+                <div class="language-picker">
+                    <span>EN</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-details">
+            <div class="selection-section">
+                <h2>Your Selection</h2>
+                <div class="hotel-details">
+                    <h3 id="hotel-name"></h3>
+                    <p id="hotel-address"></p>
+                    <p id="hotel-rating"></p>
+                    <p id="hotel-amenities"></p>
+                </div>
+            </div>
+            <div class="booking-section">
+                <h2>Your Booking Details</h2>
+                <p>Check-in: <span id="check-in-date"></span></p>
+                <p>Check-out: <span id="check-out-date"></span></p>
+                <p>Total length of stay: <span id="total-stay"></span></p>
+                <p>You selected: <span id="room-selection"></span></p>
+                <a href="search-results.html">Change your selection</a>
+            </div>
+            <div class="price-summary-section">
+                <h2>Your Price Summary</h2>
+                <p>Original price: <span id="original-price"></span></p>
+                <p>Limited-time Deal: <span id="discount"></span></p>
+                <p>Total: <span id="total-price"></span></p>
+                <p>Price breakdown: <span id="price-breakdown"></span></p>
+                <p>Cancellation cost: <span id="cancellation-cost"></span></p>
+            </div>
+            <div class="special-requests-section">
+                <h2>Special Requests</h2>
+                <textarea id="special-requests" placeholder="Enter any special requests here..."></textarea>
+            </div>
+            <div class="arrival-time-section">
+                <h2>Arrival Time</h2>
+                <select id="arrival-time">
+                    <!-- Options will be dynamically generated -->
+                </select>
+            </div>
+            <div class="proceed-section">
+                <button onclick="proceedToPayment()">Proceed to Payment</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
